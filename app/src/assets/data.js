@@ -1,5 +1,5 @@
 import rubyLogo from './ruby.png'
-import railsLogo from './rails-logo-3.png'
+import railsLogo from './rails-logo-2.png'
 import jsLogo from './js-logo.png'
 import cssLogo from './css-logo-1.png'
 import htmlLogo from './html-logo.png'
@@ -76,10 +76,10 @@ export const stackData = [
 
 export const proficiencyData = [
     {
-        proficiency: 'Object Oriented Programming'
+        proficiency: 'Object Oriented Programming (OOP)'
     },
     {
-        proficiency: 'SQL & Relational Databases'
+        proficiency: 'Relational Databases'
     },
     {
         proficiency: "Authentication (Rails, JWT's, OAuth)"
@@ -94,13 +94,16 @@ export const proficiencyData = [
         proficiency: 'RESTFUL Applications'
     },
     {
-        proficiency: 'Test Driven Design'
+        proficiency: 'Test Driven Design (TDD)'
+    },
+    {
+        proficiency: 'Responsive Design'
     },
     {
         proficiency: "API's"
     },
     {
-        proficiency: 'Responsive Design'
+        proficiency: 'SQL'
     },
     {
         proficiency: 'JSON'
@@ -110,5 +113,48 @@ export const proficiencyData = [
     },
     {
         proficiency: 'Thunk'
+    }
+]
+
+export const projectData = [
+    {
+        id: 1,
+        name: 'React Game',
+        link: 'https://github.com/chriskay25/juke',
+        frontend: 'React',
+        backend: 'Ruby on Rails',
+        description: 'This is a game built using mostly pure React and state management for frontend operations. Game stats and high scores are saved to user accounts on the backend.'
+    },
+    {
+        id: 2,
+        name: 'Flashcards',
+        link: 'https://github.com/chriskay25/react-flashcards',
+        frontend: 'React',
+        backend: 'Ruby on Rails',
+        description: 'A web app that allows users to create their own flashcard decks which they can use to study and quiz themselves.'
+    },
+    {
+        id: 3,
+        name: 'Notepod',
+        link: 'https://github.com/chriskay25/notepod',
+        frontend: 'Embedded Ruby (ERB) & CSS',
+        backend: 'Ruby on Rails',
+        description: 'Web app created to allow users to make and share notes about their favorite podcast episodes.'
+    },
+    {
+        id: 4,
+        name: 'Bucket List',
+        link: 'https://github.com/chriskay25/bucket_list',
+        frontend: 'Embedded Ruby (ERB) & CSS',
+        backend: 'Sinatra',
+        description: 'A web app that lets users track and remember travel destinations that are on their bucket list.'
+    },
+    {
+        id: 5,
+        name: 'Brewery Finder',
+        link: 'https://github.com/chriskay25/cheers',
+        frontend: null,
+        backend: null,
+        description: 'This is a project that scrapes the web for information about breweries in the Atlanta area. Users can interact with the app through a Command Line Interface.'
     }
 ]

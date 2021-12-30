@@ -1,12 +1,16 @@
 
-const Nav = () => {
+const Nav = ({ profileRef, skillsRef, projectsRef, contactRef }) => {
+  const scrollToSection = (ref) => {
+    window.scrollTo({behavior: 'smooth', top: ref.current.offsetTop})
+  }
+
   return (
-    <nav style={{padding: '1rem 0', width: '100%', display: 'flex', justifyContent: 'center', position: 'fixed'}}>
-      <ul style={{display: 'flex', color: 'white', justifyContent: 'space-between', width: '80%'}}>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact Me</li>
+    <nav>
+      <ul style={{display: 'flex', color: 'white', justifyContent: 'space-between', width: '90%', maxWidth: '800px'}}>
+        <li onClick={() => scrollToSection(profileRef)}>ABOUT</li>
+        <li onClick={() => scrollToSection(skillsRef)}>SKILLS</li>
+        <li onClick={() => scrollToSection(projectsRef)}>PROJECTS</li>
+        <li onClick={() => scrollToSection(contactRef)}>CONTACT</li>
       </ul>
     </nav>
   )

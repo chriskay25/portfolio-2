@@ -1,16 +1,25 @@
+import { useRef, useEffect } from 'react'
 import Stack from './Stack'
 import Proficiencies from './Proficiencies'
 
-const Skills = () => {
+const Skills = ({ collectRef }) => {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    collectRef(ref)
+  }, [ref])
+
   return (
-    <section className='skills'>
-      <div className='skills-header'>
-        <h2 style={{fontSize: '3rem', fontWeight: 300, color: 'grey'}}>Skills</h2>
-        <div style={{width: '60vw', height: '2px', background: 'mediumseagreen', margin: '20px auto'}} />
+    <section ref={ref} className='skills'>
+      <div className='section-container'>
+        <div className='section-header'>
+          <h2 className='section-title'>SKILLS</h2>
+          <div className='section-title-underline' />
+        </div>
+
+        <Stack />
+        <Proficiencies />
       </div>
-      
-      <Stack />
-      <Proficiencies />
     </section>
   )
 }

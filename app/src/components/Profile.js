@@ -1,19 +1,22 @@
+import { useRef, useEffect } from 'react'
 import AboutMe from './AboutMe'
-import ProfileDetails from './ProfileDetails'
 
-const Profile = () => {
+const Profile = ({ collectRef }) => {
+  const ref = useRef(null)
+  
+  useEffect(() => {
+    collectRef(ref)
+  })
+
   return (
-    <section className='profile'>
-      <div className='profile-container'>
-        <div className='profile-header'>
-          <h2 style={{fontSize: '3rem', fontWeight: 300, color: 'grey'}}>Profile</h2>
-          <p style={{fontSize: '1.7rem'}}>Full Stack Web Developer</p>
-          <div style={{width: '60vw', height: '2px', background: 'mediumseagreen', margin: '20px auto'}} />
+    <section ref={ref} className='profile' style={{background: '#fff'}}>
+      <div className='section-container'>
+        <div className='section-header'>
+          <h2 className='section-title'>PROFILE</h2>
+          <div className='section-title-underline' />
         </div>
 
         <AboutMe />
-        <div className='pic' />
-        <ProfileDetails />
       </div>
     </section>
   )

@@ -1,12 +1,19 @@
+import { useRef, useEffect } from 'react'
 import Project from './Project'
 import { projectData } from '../assets/data'
 
-const Projects = () => {
+const Projects = ({ collectRef }) => {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    collectRef(ref)
+  })
+
   return (
-    <section className='outer-container' style={{background: '#fff'}}>
+    <section ref={ref} className='projects'>
       <div className='section-container'>
         <div className='section-header'>
-          <h2 className='section-title'>Projects</h2>
+          <h2 className='section-title'>PROJECTS</h2>
           <div className='section-title-underline' />
         </div>
         <div style={{}}>

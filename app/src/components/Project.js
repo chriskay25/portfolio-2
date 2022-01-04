@@ -1,4 +1,4 @@
-import ghLogo from '../assets/gh-light-sm.png'
+import ghLogo from '../assets/gh-logo-light.png'
 
 const Project = ({ project }) => {
   return (

@@ -109,7 +109,7 @@ export const proficiencyData = [
         proficiency: 'Relational Databases'
     },
     {
-        proficiency: "Authentication (Rails, JWT's, OAuth)"
+        proficiency: 'Responsive Design'
     },
     {
         proficiency: 'Single Page Applications'
@@ -118,13 +118,13 @@ export const proficiencyData = [
         proficiency: 'MVC Frameworks'
     },
     {
-        proficiency: 'RESTFUL Applications'
-    },
-    {
         proficiency: 'Test Driven Design (TDD)'
     },
     {
-        proficiency: 'Responsive Design'
+        proficiency: "Authentication"
+    },
+    {
+        proficiency: 'REST'
     },
     {
         proficiency: "API's"
@@ -139,7 +139,7 @@ export const proficiencyData = [
         proficiency: 'Git'
     },
     {
-        proficiency: 'Thunk'
+        proficiency: 'Async'
     }
 ]
 

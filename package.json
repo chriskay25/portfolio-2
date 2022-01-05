@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+  },  
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -19,7 +23,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Kay",
   "license": "ISC",
   "dependencies": {
     "framer-motion": "^5.5.5",

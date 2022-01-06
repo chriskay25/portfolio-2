@@ -19,7 +19,8 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0",
+    "dev": "webpack-dev-server --open",
+    "start": "node server.js",
     "build": "webpack",
     "postinstall": "npm run build"
   },
@@ -27,18 +28,19 @@
   "author": "Chris Kay",
   "license": "ISC",
   "dependencies": {
-    "framer-motion": "^5.5.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "express": "^4.17.2",
+    "framer-motion": "^5.5.5",
     "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0",
-    "webpack": "^5.65.0"
+    "webpack-dev-server": "^4.6.0"
   }
 }

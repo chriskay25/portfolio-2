@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "Chris Kay",
